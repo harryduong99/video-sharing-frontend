@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  --primary-bg: #fff;
+  --primary-text: #0D0E11;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+@layer components {
+  .btn-base {
+    @apply btn-sm rounded-2xl font-medium text-base-white focus:outline-none disabled:cursor-not-allowed;
+  }
+
+  .btn-lg {
+    @apply px-[18px] py-2.5 flex items-center justify-center text-md;
+  }
+
+  .btn-md {
+    @apply px-4 py-2.5 flex items-center justify-center text-sm;
+  }
+
+  .btn-sm {
+    @apply px-3.5 py-2 flex items-center justify-center text-sm;
+  }
+
+  .icon-base {
+    @apply relative inline-block h-4 w-4;
+  }
+
+  .video-frame {
+    aspect-ratio: 16 / 9;
+  }
+
+  .mobile-nav-animate {
+    transform-origin: top;
+    animation: mobileNavDropdown 300ms ease-out forwards;
+  }
+}
