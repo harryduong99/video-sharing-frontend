@@ -1,24 +1,25 @@
 # Introduction
 
 ## Overview
-- This project is to provide the frontend (**video-sharing application**) for users (client side).
+This project is to provide the frontend (**video-sharing application**) for users (client side).
 
 Here is the link to the app: http://3.93.48.247:3001/
 
 ## Purpose
-- End users need an interface to easily interactive with the "videos sharing" service. All of their experience will be based on that interface. Then we need to provide an interface that has UX friendly and cover all required functionalities that we are going to let users use.
+- End users need an interface to be easily interactive with the "videos sharing" service. All of their experience will be based on that interface. Then we need to provide an interface that has UX-friendly and cover all required functionalities that we are going to let users use.
 - This "video-sharing-frontend" project will do that job.
 ## Key features
 
-The highlighted feature is sharing video with real-time notification. To archive this main feature, we have 2 groups of features are supported:
+The highlighted feature is sharing videos with real-time notification. To archive this main feature, we have 2 groups of features are supported:
 1. Authentication features (users)
   - Registration
   - Login
   - Logout
 2. Videos related features
-  - Sharing video and send real-time notification
+  - Sharing video and sending real-time notification
   - View list of videos
 
+Besides, The UI is also responsive (Mobile friendly) 
 # Prerequisites
 
 ## Software
@@ -40,14 +41,14 @@ Follow steps below to have the project running on your local:
 
 # Running the Application
 ## Start the app
-After the installation and configuration step, now we are ready to spinning up the frontend.
+After the installation and configuration step, now we are ready to spin up the frontend.
 
 Run from your cmd: `npm run dev`
 
 ## Testing
 There are still a lot of places that can be added Unit test. Due to a personal urgent issue of the author for the last few days, the frontend was assembled quickly without making it look fancy and well tests prepared.
 
-Beside Unit tests, End to end test is also supported (Playwright). This end-to-end test's goal is to verify the main flows, reduce 'flow-broken' issues as well as reduce time for the manual test step later in the software-delivery process.
+Beside Unit tests, End to end tests are also supported (Playwright). This end-to-end test's goal is to verify the main flows, reduce 'flow-broken' issues as well as reduce time for the manual test step later in the software-delivery process.
 
 1. Run the Unit tests: `npm run test`
 2. Run the E2E tests: `npm run test:e2e`. can set the `headless` option in `playwright.config.ts` to see the test run in browser.
@@ -64,7 +65,7 @@ The basic user journey is:
 4. The user opens the share-video modal, type in the youtube url and clicks share.
 5. The user can logout if they want (to not receive notification from other's video sharing)
 
-In case of don't want to register an account, we have 2 sample accounts that were prepared by DB's seed in our backend service:
+In case you don't want to register an account, we have 2 sample accounts that were prepared by DB's seed in our backend service:
 > User1: 
 Email: user1@example.com
 Password: 123123 
@@ -74,6 +75,10 @@ Email: user2@example.com
 Password: 123123 
 
 A sample youtube-url to share: `https://youtu.be/E8gmARGvPlI?si=35xrzkewZzaTElGG`
+
+Demo:
+
+https://github.com/harryduong99/video-sharing-frontend/assets/33088334/7f05c756-10dc-4fad-9b82-ac5b318565ae
 
 # Deployment
 
