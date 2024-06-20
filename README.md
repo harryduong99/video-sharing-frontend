@@ -3,7 +3,7 @@
 ## Overview
 This project is to provide the frontend (**video-sharing application**) for users (client side).
 
-Here is the link to the app: http://3.93.48.247:3001/
+Here is the link to the app: http://3.93.48.247:3001/ (deprecated - server temporarily shutdown)
 
 ## Purpose
 - End users need an interface to be easily interactive with the "videos sharing" service. All of their experience will be based on that interface. Then we need to provide an interface that has UX-friendly and cover all required functionalities that we are going to let users use.
